@@ -1,0 +1,18 @@
+
+<div class="posts">
+  {{#each posts as |post|}}
+    <a
+      href="/post/{{post.id}}"
+      class="block mb-4 ml-4 mr-4 max-w-l p-6 bg-white border-b-8 border-r-8 border-gray-200 rounded-lg shadow-md hover:bg-gray-100"
+    >
+      <h5
+        class="text-2xl font-bold tracking-tight text-black"
+      >{{post.title}}</h5>
+      <p class="mb-2 text-sm text-gray-700">Posted by:
+        {{post.user.username}}
+        on
+        {{format_date post.date_created}}</p>
+      <p class="text-gray-700">{{post.description}}</p>
+    </a>
+  {{/each}}
+</div>

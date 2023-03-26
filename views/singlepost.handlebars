@@ -1,0 +1,25 @@
+<div class="block max-w-l m-1 p-6 bg-white border-t-8 border-gray-200 shadow-md">
+        <h5 class="text-4xl font-bold tracking-tight text-gray-900">{{post.title}}</h5> </a>
+        <h6 class=" font-medium mb-2 text-gray-700 ">Posted by: {{post.user.username}} on {{format_date post.date_created}}</h6>
+        <p class="p-4 m-2 font-medium text-3xl text-gray-700 border-2 border-gray-400 rounded-lg">{{post.description}}</p>
+    </div>
+    
+    
+{{>postcomments post.comments}}
+    
+
+        <form>
+           <div class="max-w-l m-4 border border-green-200 rounded-lg bg-gray-50">
+            <input type="hidden" id="post-id" value="{{post.id}}" />
+               <div class="px-4 py-2 bg-white rounded-t-lg">
+                   <label for="comment" class="sr-only">Your comment</label>
+                   <textarea id="comment" rows="4" class="w-full px-0 text-sm text-gray-900 bg-white border-0 focus:ring-0" placeholder="Write a comment..." required></textarea>
+               </div>
+               <div class="flex items-center justify-between px-3 py-2 border-t">
+                   <button type="click" onclick="addComment()" name="{{post.id}}" id="comment-btn" class="inline-flex items-center py-2.5 px-4 text-s font-medium text-center text-white bg-green-700 rounded-lg focus:ring-4 focus:ring-green-200 hover:bg-green-800">
+                       Post comment
+                   </button>
+               </div>
+           </div>
+        </form>
+<script src="/js/comment.js"></script>

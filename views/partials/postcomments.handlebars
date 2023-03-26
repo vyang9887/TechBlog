@@ -1,0 +1,17 @@
+<section
+  class="block max-w-l m-4 p-6 bg-white border-b-8 border-r-8 border-gray-200 rounded-lg shadow-md"
+>
+  <h5
+    class="mb-2 text-2xl font-bold text-black"
+  >Comments</h5>
+  {{#each this}}
+    <div
+      class="block max-w-l m-1 p-6 bg-white border-b-4 border-r-4 border-gray-200 rounded-lg shadow-md"
+    >
+      <p class="font-medium text-gray-300"> {{comments}} </p>
+      <p class="font-medium text-xs text-green-600">by
+        {{user.username}},
+        {{format_date date_created}}</p>
+    </div>
+  {{/each}}
+</section>

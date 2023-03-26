@@ -1,0 +1,26 @@
+[
+    {
+        "user_id": "1",
+        "comments": "I believe China is weaponizing TikTok agaisnt the world and should be banned.",
+        "id": 1,
+        "post_id": 1
+    },
+    {
+        "user_id": "2",
+        "comments": "Yes! He is live!.",
+        "id": 2,
+        "post_id": 2
+    },
+    {
+        "user_id": "3",
+        "comments": "Both points are correct. Some companies have successfully created well thought out and developed remake while others have used this trend just as a cash grab.",
+        "id": 3,
+        "post_id": 3
+    },
+    {
+        "user_id": "4",
+        "comments": "yes...",
+        "id": 4,
+        "post_id": 4
+    }
+]

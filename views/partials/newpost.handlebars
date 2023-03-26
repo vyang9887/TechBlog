@@ -1,0 +1,34 @@
+<form>
+  <div
+    class="m-4 border border-gray-200 rounded-lg bg-white">
+    <div class="p-3 border-b dark:border-gray-600">
+      <div>
+        <div class="">
+          <label
+            for="title"
+            class="block mb-2 text-sm font-medium text-black">Post title</label>
+          <textarea
+            id="title"
+            rows="1"
+            class="block p-2.5 w-full text-sm text-black bg-gray-50 rounded-lg border border-gray-300 focus:ring-bluen-500 focus:border-blue-500"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="p-3 bg-white rounded-b-lg">
+      <label
+        for="post"
+        class="block mb-2 text-sm font-medium text-black">Post content</label>
+      <textarea
+        id="description"
+        rows="8"
+        class="block p-2.5 w-full text-sm text-black bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"required></textarea>
+    </div>
+  </div>
+  <button
+    type="submit"
+    id="submit-new-post"
+    class="btn ml-4 inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-green-600 rounded-lg focus:ring-4 focus:ring-blue-200">Publish
+  </button>
+</form>
+
+<script src="./js/new.js"></script>

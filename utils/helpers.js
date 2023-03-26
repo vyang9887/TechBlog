@@ -1,0 +1,10 @@
+module.exports = {
+    format_date: (date) => {
+      // Format date as MM/DD/YYYY
+      return `${new Date(date).getMonth() + 1}/${new Date(date).getDate()}/${
+        // We add five years to the 'year' value to calculate the end date
+        new Date(date).getFullYear()
+      }`;
+      // return date.toLocaleDateString();
+    },
+  };
