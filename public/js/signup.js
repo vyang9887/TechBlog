@@ -17,7 +17,6 @@ const signupFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        // document.location.replace("/dashboard");
         const response = await fetch("/api/users/login", {
           method: "POST",
           body: JSON.stringify({ email, password }),
